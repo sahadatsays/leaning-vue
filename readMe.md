@@ -2,11 +2,11 @@
 
 ## Content List
 
-- [ x ] Getting Started.
-- [ x ] Interacting with the DOM (Templates)
-- [ x ] Understanding the VueJS Instance.
-- [ x ] Vue CLI.
-- [ x ] Components
+- [x] Getting Started.
+- [x] Interacting with the DOM (Templates)
+- [x] Understanding the VueJS Instance.
+- [x] Vue CLI.
+- [x] Components
 - [ ] Forms
 - [ ] Directives Filters & Mixins.
 - [ ] Animations & Transitions.
