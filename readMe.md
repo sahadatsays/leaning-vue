@@ -34,6 +34,14 @@
 - [x] Dynamic Styling using names.
 - [x] Styling dynamically without CSS Classes.
 - [x] Styling Elements with the Array syntax.
+- [] Conditionals & Lists.
+- [x] Coditional Rendering with `v-if`
+  - [x] Using Alternative of `v-if` use `<template> </template>`
+- [x] Don't detach `v-show`. It can `display:noen`.
+- [x] Rendering Lists using `v-for`.
+- [x] looping through objects.
+  - [x] exmple for loop `v-for="(value, key, index) in list"`
+- [x] Looping through a list of numbers `v-for="n in 10"` {{ n }}
 
 ## Detail Note For Learn VueJS.
 
