@@ -1,5 +1,6 @@
-#Learn Vue
-##Content List
+# Learn Vue
+
+## Content List
 
 - [ ] Getting Started.
 - [ ] Interacting with the DOM (Templates)
@@ -14,11 +15,11 @@
 - [ ] State Management.
 - [ ] Demploying a Vue Applications.
 
-##Detail Note For Learn VueJS.
+## Detail Note For Learn VueJS.
 
-###Understanding Vue Template.
+### Understanding Vue Template.
 
-    This is Vue template Sample code.
+This is Vue template Sample code.
 
 ```html
 <div id="app">
