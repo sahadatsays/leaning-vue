@@ -1,6 +1,6 @@
 # Learn Vue
 
-## Content List
+## Root Content List
 
 - [x] Getting Started.
 - [x] Interacting with the DOM (Templates)
@@ -14,6 +14,26 @@
 - [ ] Routing.
 - [ ] State Management.
 - [ ] Demploying a Vue Applications.
+
+# Full Content List
+
+- [x] Basic Structure.
+- [x] Different Types of Directives.
+- [x] Listening to events.
+- [x] Modifying events.
+- [x] Listening to Keybord events.
+- [x] Two-way-binding data.
+  - [x] v-model directive
+- [x] Reactivity with the computed property.
+- [x] Alternative to Computed Properties. `watch`
+- [x] Shorthand.
+  - [x] `v-on:click="clickHandler"` to `@click="clickHandler"`
+  - [x] `v-bind:href="link"` to `:href="link"`
+- [x] Dynamic Styling with C SS Classes.
+- [x] Dynamic Styling with css by method object.
+- [x] Dynamic Styling using names.
+- [x] Styling dynamically without CSS Classes.
+- [x] Styling Elements with the Array syntax.
 
 ## Detail Note For Learn VueJS.
 
