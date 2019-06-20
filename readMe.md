@@ -34,7 +34,9 @@
 - [x] Dynamic Styling using names.
 - [x] Styling dynamically without CSS Classes.
 - [x] Styling Elements with the Array syntax.
-- [] Conditionals & Lists.
+
+### Conditionals & Lists.
+
 - [x] Coditional Rendering with `v-if`
   - [x] Using Alternative of `v-if` use `<template> </template>`
 - [x] Don't detach `v-show`. It can `display:noen`.
