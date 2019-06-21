@@ -86,6 +86,12 @@
   ```
 
 - [x] How Vue.js Manage data and Methods.
+- [x] Placing refs and using them on your templates.
+- [x] Vue API.
+- [x] Mounting a Template.
+  - [x] `vm1.$mount('#app')`
+- [x] Vue Components.
+- [x] VueJS Instance Lifecycle.
 
 ## Detail Note For Learn VueJS.
 
