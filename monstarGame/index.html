@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monster Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Monster Fight Game Using VueJS </h1>
+        </header>
+        <section>
+
+            <div class="you">
+                <span>You</span>
+                <div id="process-area">
+                    <div id="you-process" :style="{width: playerHelth + '%', backgroundColor: playerHelthWarning}">
+                        <p>{{ playerHelth }}%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="monster">
+                <span>Monster</span>
+                <div id="process-area">
+                    <div id="monster-process"
+                        :style="{width: monsterHelth + '%', backgroundColor: monsterHelthWarning}">
+                        <p>{{ monsterHelth }}%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="game-control">
+                <div v-if="!gameIsRunning" class="game-strat">
+                    <button @click="gameStart" class="btn start-game-btn">Start Game</button>
+                </div>
+                <div v-else class="game-actions">
+                    <button @click="attack" class="btn attack">ATTACK</button>
+                    <button @click="specialAttack" class="btn special-attack">SPECIAL ATTACK</button>
+                    <button @click="heal" class="btn heal">HEAL</button>
+                    <button @click="giveUp" class="btn give-up">GIVE UP</button>
+                </div>
+            </div>
+        </section>
+        <section v-if="turns.length > 0">
+            <div id="action-list">
+                <ul>
+                    <li v-for="turn in turns" :class="{'you-list': turn.isPlayer, 'monster-list': !turn.isPlayer}">
+                        {{ turn.text }}
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script src="./vendors/vue.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
