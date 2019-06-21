@@ -45,6 +45,48 @@
   - [x] exmple for loop `v-for="(value, key, index) in list"`
 - [x] Looping through a list of numbers `v-for="n in 10"` {{ n }}
 
+### The Vue.js Instances.
+
+- [x] Module Introduction.
+- [x] Known about some instances `el:`, `data:{}`, `computed: {}`, `methods: {}`, `watch: {}`.
+- [x] Using Multiple Vue Instances.
+- [x] Access the Vue instance from outside.
+
+  - [x] Example:
+
+  ```html
+  <div id="app1">
+    <p>{{ title }}</p>
+  </div>
+
+  <div id="app2">
+    <p>{{ title }}</p>
+    <button @click="changeAppOneTitle">Change Title To App 1</button>
+  </div>
+  ```
+
+  ```javascript
+  var vapp1 = new Vue({
+    el: "#app1",
+    data: {
+      title: "Hello App 1 Title"
+    }
+  });
+  var vapp2 = new Vue({
+    el: "#app2",
+    data: {
+      title: "Hello App 2 Title"
+    },
+    methods: {
+      changeAppOneTitle: function() {
+        vapp1.title = "Changed !";
+      }
+    }
+  });
+  ```
+
+- [x] How Vue.js Manage data and Methods.
+
 ## Detail Note For Learn VueJS.
 
 ### Understanding Vue Template.
