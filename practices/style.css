@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app,
+#app2,
+#app3 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.btn {
+    min-width: 260px;
+    font-size: 23px;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 20px 0;
+}

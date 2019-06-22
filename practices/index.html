@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practices Vue - Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app3">
+        <h1 v-if="isTitleShow">{{ title }}</h1>
+        <button class="btn" @click="isTitleShow = !isTitleShow" ref="btn">{{ isTitleShow ? 'Hide' : 'Show' }}</button>
+        <button @click="changeTitle" class="btn">Change Title</button>
+        <button @click="destroy" class="btn">Destroy</button>
+        <hello name="Sahadat "></hello>
+    </div>
+    <hr>
+    <div id="app2">
+    </div>
+
+    <script src="./vendors/vue.min.js"></script>
+    <script src="./lifecycle.js"></script>
+</body>
+
+</html>

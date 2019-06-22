@@ -1,5 +1,7 @@
 # Learn Vue
 
+[Live Demo](https://sahadatsays.github.io/leaning-vue/)
+
 ## Root Content List
 
 - [x] Getting Started.
@@ -92,6 +94,48 @@
   - [x] `vm1.$mount('#app')`
 - [x] Vue Components.
 - [x] VueJS Instance Lifecycle.
+
+  - [x] Steps are in stack :)
+
+  ```javascript
+  beforeCreate: () => {
+        console.log("beforeCreate() running...");
+    },
+    created: () => {
+        console.log("created() running...");
+    },
+    beforeMount: () => {
+        console.log("beforeMount() running...");
+    },
+    mounted: () => {
+        console.log("mounted() running...");
+    },
+    beforeUdpate: () => {
+        console.log("beforeUpdate() running...");
+    },
+    updated: () => {
+        console.log("updated() running...");
+    },
+    beforeDestroy: () => {
+        console.log("beforeDestroy() running...");
+    },
+    destroyed: () => {
+        console.log("destroyed() running...");
+    }
+  ```
+
+# Working with Components and Vue CLI
+
+- [x] Vue CLI & Workflows.
+- [x] Introduction of Component.
+- [x] Registering Components `global` and `local`
+- [x] Storing Data in Component to Components with data method.
+- [x] The Root Component in the App.vue file.
+- [x] Create a new component.
+- [x] Using Component.
+- [x] Better Folder Stuctures.
+- [x] How to name you component tags selector.
+- [x] Scoping component styles.
 
 ## Detail Note For Learn VueJS.
 
