@@ -136,6 +136,12 @@
 - [x] Better Folder Stuctures.
 - [x] How to name you component tags selector.
 - [x] Scoping component styles.
+- [x] How to communicate parent component to child components using `props`.
+- [x] Validating props. `props:{ name: [String, Array] }`.
+- [x] Custom events for child to parent comuunication.
+- [x] Unidirectional Data flow in VueJS.
+- [x] Communication between sibling Components.
+- [x] Using Event Bus for communication between child to child.
 
 ## Detail Note For Learn VueJS.
 

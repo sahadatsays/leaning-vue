@@ -1,48 +1,45 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+  <div class="container">
+    <h2>Vue JS Learn Vue-CLI</h2>
+    <p>Server Status: {{ status }}</p>
+    <hr>
+    <user></user>
   </div>
 </template>
 
 <script>
+import User from "./components/User";
+
 export default {
-  name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      status: "Cretical"
     };
+  },
+  components: {
+    User
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
+* {
+  margin: 0;
   padding: 0;
 }
-
-li {
-  display: inline-block;
-  margin: 0 10px;
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.col-xs-12 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-a {
-  color: #42b983;
+.col-md-6 {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
 }
 </style>
