@@ -1,54 +1,46 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3
-          class="text-center mt-4 bg-light py-3"
-        >Welcome to Wonder Quotes - Demo Application for Learn to VueJS</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card card-body bg-light">
-          <p
-            class="quote"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, totam?</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-body bg-light">
-          <p
-            class="quote"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, totam?</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-body bg-light">
-          <p
-            class="quote"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, totam?</p>
-        </div>
-      </div>
-    </div>
+    <quote-header :count_quotes="quotes.length" :max_quotes="max_quotes"></quote-header>
+    <new-quote @addNewQuote="newQuoteToQuotes"></new-quote>
+    <quotes-grid :quotes="quotes" @quoteDeleted="deleteQuote"></quotes-grid>
   </div>
 </template>
 
 <script>
+import QuotesGrid from "./components/QuotesGrid";
+import Header from "./components/Header";
+import NewQuote from "./components/NewQuote";
+
 export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      quotes: ["Some Quote for See."],
+      max_quotes: 10
     };
+  },
+
+  components: {
+    QuotesGrid,
+    QuoteHeader: Header,
+    NewQuote
+  },
+  methods: {
+    newQuoteToQuotes(quote) {
+      if (this.quotes.length >= this.max_quotes) {
+        alert("Your have maximum number of quotes. Pelase delete some quote.");
+        return;
+      }
+      this.quotes.push(quote);
+      // console.log(quote);
+    },
+    deleteQuote(index) {
+      this.quotes.splice(index, 1);
+    }
   }
 };
 </script>
 
 
 <style>
-.quote {
-  font-family: "Arizonia", cursive;
-  font-size: 2em;
-  font-weight: normal;
-}
 </style>
